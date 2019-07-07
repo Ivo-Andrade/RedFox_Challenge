@@ -1,0 +1,100 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+/* Background Gradients */
+html,body{
+	background-color: beige;
+	background: rgba(247,255,248,1);
+	background: -moz-linear-gradient(-45deg, rgba(247,255,248,1) 0%, rgba(193,247,210,1) 28%, rgba(189,251,177,1) 62%, rgba(133,255,141,1) 87%, rgba(112,255,56,1) 97%, rgba(112,255,56,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(247,255,248,1)), color-stop(28%, rgba(193,247,210,1)), color-stop(62%, rgba(189,251,177,1)), color-stop(87%, rgba(133,255,141,1)), color-stop(97%, rgba(112,255,56,1)), color-stop(100%, rgba(112,255,56,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(247,255,248,1) 0%, rgba(193,247,210,1) 28%, rgba(189,251,177,1) 62%, rgba(133,255,141,1) 87%, rgba(112,255,56,1) 97%, rgba(112,255,56,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(247,255,248,1) 0%, rgba(193,247,210,1) 28%, rgba(189,251,177,1) 62%, rgba(133,255,141,1) 87%, rgba(112,255,56,1) 97%, rgba(112,255,56,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(247,255,248,1) 0%, rgba(193,247,210,1) 28%, rgba(189,251,177,1) 62%, rgba(133,255,141,1) 87%, rgba(112,255,56,1) 97%, rgba(112,255,56,1) 100%);
+	background: linear-gradient(135deg, rgba(247,255,248,1) 0%, rgba(193,247,210,1) 28%, rgba(189,251,177,1) 62%, rgba(133,255,141,1) 87%, rgba(112,255,56,1) 97%, rgba(112,255,56,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fff8', endColorstr='#70ff38', GradientType=1 );
+}
+
+#header{
+	background: rgba(0,0,0,1);
+	background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(148,0,0,1) 25%, rgba(173,0,0,1) 45%, rgba(173,0,0,1) 55%, rgba(148,0,0,1) 75%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(25%, rgba(148,0,0,1)), color-stop(45%, rgba(173,0,0,1)), color-stop(55%, rgba(173,0,0,1)), color-stop(75%, rgba(148,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(148,0,0,1) 25%, rgba(173,0,0,1) 45%, rgba(173,0,0,1) 55%, rgba(148,0,0,1) 75%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(148,0,0,1) 25%, rgba(173,0,0,1) 45%, rgba(173,0,0,1) 55%, rgba(148,0,0,1) 75%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(148,0,0,1) 25%, rgba(173,0,0,1) 45%, rgba(173,0,0,1) 55%, rgba(148,0,0,1) 75%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(148,0,0,1) 25%, rgba(173,0,0,1) 45%, rgba(173,0,0,1) 55%, rgba(148,0,0,1) 75%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+#footer{
+	background: rgba(0,0,0,1);
+	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 30%, rgba(26,26,26,1) 49%, rgba(20,20,20,1) 70%, rgba(19,19,19,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(30%, rgba(20,20,20,1)), color-stop(49%, rgba(26,26,26,1)), color-stop(70%, rgba(20,20,20,1)), color-stop(100%, rgba(19,19,19,1)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 30%, rgba(26,26,26,1) 49%, rgba(20,20,20,1) 70%, rgba(19,19,19,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 30%, rgba(26,26,26,1) 49%, rgba(20,20,20,1) 70%, rgba(19,19,19,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 30%, rgba(26,26,26,1) 49%, rgba(20,20,20,1) 70%, rgba(19,19,19,1) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 30%, rgba(26,26,26,1) 49%, rgba(20,20,20,1) 70%, rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#131313', GradientType=1 );
+}
+/* Background Gradients */
+
+/* Allows #main to use space between header and footer */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#main {
+    flex: 1;
+}
+/* Allows #main to use space between header and footer */
+
+/* Aesthetic changes (bg colours for Boot elements, font colours, etc) */
+#pageTitle{
+	font-weight: 600;
+}
+
+#searchButton, #welcomeButton{
+	font-weight: 700;
+	color: white;
+	border-style: none;
+  	background: #40ab61;
+}
+
+.jumbotron{
+	background-color: transparent;
+}
+
+#footer{
+	min-height: 20px;
+	color: #BBB;
+	font-style: italic;
+}
+/* Aesthetic changes (bg colours for Boot elements, font colours, etc) */
+
+/* dropdown active on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+/* Intro animations */
+ .fade-in{
+ 	opacity: 1;
+ 	transition-delay: 1s;
+ }
+/* Intro animations */
+
+/* Tablets */
+@media (max-width: 992px){
+
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+}

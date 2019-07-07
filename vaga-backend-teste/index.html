@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>RedFox Challenge</title>
+
+		<!--Bootstrap CSS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!--CSS Style/Fonts-->
+		<link href="./style.css" type="text/css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	</head>
+
+	<body>
+
+		<!--JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<!--TEMP-->
+		<script>
+
+		</script>
+
+		<div class="wrapper">
+
+			<!--Page Header-->
+			<header>
+				<nav class="navbar navbar-dark bg-dark navbar-expand-lg fade-in" id="header">
+					<a class="navbar-brand" href="https://github.com/RedFoxTech/vaga-backend-teste" target="_blank">
+						<img src="pokemon.png" width="30" height="30" />
+					<!--Icon from IconFinder
+						@ https://www.iconfinder.com/icons/214848/longico_pikachu_pokeball_pokemon_icon-->
+						<strong id="pageTitle">RedFox Challenge</strong>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-item nav-link" href="#">Pokédex List</a>
+							<a class="nav-item nav-link" href="#">Legendaries</a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true">Sort by</a>
+								<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+									<a class="nav-item nav-link" href="#">Type</a>
+									<a class="nav-item nav-link" href="#">Weather</a>
+									<a class="nav-item nav-link" href="#">Stats</a>
+								</div>
+							</li>
+						</div>
+						<form class="d-flex form-inline">
+		    				<div class="input-group">
+								<input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+								<div class="input-group-append">
+		    					<button class="btn btn-outline-secondary" type="button" id="searchButton">GO!</button>
+		  						</div>
+							</div>
+	    				</form>
+	    			</div>
+				</nav>
+			</header>
+
+			<!--Page Content-->
+			<div class="container-fluid d-flex justify-content-center align-items-center fade-in" id="main">
+
+				<div class="jumbotron col-8" id="welcome">
+					<h1 class="text-center">Find your Pokémon:</h1>
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Type the name or Pokédex #...">
+						<div class="input-group-append">
+	    					<button class="btn btn-outline-secondary" type="button" id="welcomeButton">GO!</button>
+	  					</div>
+					</div>
+				</div>
+			</div>
+
+	    	<!--Page Footer-->
+			<footer>
+				<div class="container-fluid flex-wrap fixed-bottom d-flex justify-content-center fade-in" id="footer">
+						<p class="mr-1">Project by Ivo de Andrade de Deus.</p>
+						<p>Pokémon Icon from Icon Finder.</p>
+				</div>
+			</footer>
+
+		</div>
+
+		<!--Scripts-->
+		<script type="text/javascript">
+			//animated intro
+			$('#welcome').removeClass('fade-in').delay(10000);
+			$('#footer').removeClass('fade-in').delay(1000);
+			$('#header').removeClass('fade-in').delay(1000);
+			
+		</script>
+
+		<!--BootStrap JS-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+
+<html>
